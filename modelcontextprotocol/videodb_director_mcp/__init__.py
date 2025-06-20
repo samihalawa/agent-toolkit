@@ -1,4 +1,4 @@
-from videodb_director_mcp.main import (
+from .main import (
     call_director,
     play_video,
     code_assistant,

@@ -1,4 +1,5 @@
 # Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+# Enhanced VideoDB Director MCP with Individual Agents
 
 startCommand:
   type: stdio
@@ -10,7 +11,7 @@ startCommand:
     properties:
       apiKey:
         type: string
-        description: API key to authorize the MCP server
+        description: VideoDB API key to authorize the MCP server and access all 20 individual agents
   commandFunction:
     # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
     |-
@@ -19,4 +20,4 @@ startCommand:
       args: ['-m', 'videodb_director_mcp.main', '--api-key', config.apiKey]
     })
   exampleConfig:
-    apiKey: dummy-VIDEODB_API_KEY
+    apiKey: sk-your-videodb-api-key-here

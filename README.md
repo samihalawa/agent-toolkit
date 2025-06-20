@@ -24,7 +24,9 @@
 
 # VideoDB Agent Toolkit
 
-The VideoDB Agent Toolkit exposes VideoDB context to LLMs and agents. It enables integration to AI-driven IDEs like Cursor, chat agents like Claude Code etc. This toolkit automates context generation, maintenance, and discoverability. It auto-syncs SDK versions, docs, and examples and is distributed through MCP and `llms.txt` 
+The VideoDB Agent Toolkit exposes VideoDB context to LLMs and agents. It enables integration to AI-driven IDEs like Cursor, chat agents like Claude Code etc. This toolkit automates context generation, maintenance, and discoverability. It auto-syncs SDK versions, docs, and examples and is distributed through MCP and `llms.txt`
+
+**✨ NEW: This fork includes individual MCP agents for direct access to VideoDB capabilities without routing through the Director gateway. See [INDIVIDUAL_AGENTS.md](INDIVIDUAL_AGENTS.md) for details.** 
 
 
 ## 🚀 Quick Overview
