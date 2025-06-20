@@ -73,6 +73,14 @@ A streamlined file following the [Answer.AI llms.txt proposal](https://github.co
 
 The VideoDB MCP Server connects with the Director backend framework, providing a single tool for many workflows. For development, it can be installed and used via uvx for isolated environments. For more details on MCPs, please visit [here](https://docs.videodb.io/add-videodb-mcp-server-in-clients-108)
 
+### Installing via Smithery
+
+To install video-agent-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@samihalawa/video-agent-mcp):
+
+```bash
+npx -y @smithery/cli install @samihalawa/video-agent-mcp --client claude
+```
+
 **Install `uv`**
 
 We need to install uv first.
