@@ -1,0 +1,22 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+build:
+  dockerBuildPath: modelcontextprotocol
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'python', args: ['-m', 'videodb_director_mcp.main', '--api-key', config.apiKey] })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - apiKey
+    properties:
+      apiKey:
+        type: string
+        description: VideoDB API key to authorize the MCP server and access all
+          individual agents
+  exampleConfig:
+    apiKey: sk-your-videodb-api-key-here
